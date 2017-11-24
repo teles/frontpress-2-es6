@@ -1,0 +1,49 @@
+{
+  "name": "frontpress-2-es6",
+  "version": "0.0.1",
+  "description": "WordPress as Single Page Application, version 2. Pure ES6.",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "ava": {
+    "files": [
+      "./src/**/*.spec.js",
+      "!./**/not-this-file.js"
+    ],
+    "source": [
+      "./src/**/*.{js}",
+      "!./src/**/*.spec.js"
+    ],
+    "concurrency": 5,
+    "failFast": true,
+    "failWithoutAssertions": false,
+    "tap": true,
+    "powerAssert": false,
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teles/frontpress-2-es6.git"
+  },
+  "keywords": [
+    "javascript",
+    "es6",
+    "spa",
+    "wordpress",
+    "lib"
+  ],
+  "author": "Teles <josetelesmaciel@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/teles/frontpress-2-es6/issues"
+  },
+  "homepage": "https://github.com/teles/frontpress-2-es6#readme",
+  "devDependencies": {
+    "ava": "^0.23.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
