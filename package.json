@@ -8,12 +8,11 @@
   },
   "ava": {
     "files": [
-      "./src/**/*.spec.js",
-      "!./**/not-this-file.js"
+      "./src/**/*.specs.js"
     ],
     "source": [
       "./src/**/*.{js}",
-      "!./src/**/*.spec.js"
+      "!./src/**/*.specs.js"
     ],
     "concurrency": 5,
     "failFast": true,
